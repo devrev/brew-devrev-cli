@@ -3,14 +3,16 @@
 This repo provides the latest CLI release from DevRev. It is a tool that simplifies working
 with the DevRev REST API.
 
-## Install with Debian Package
+## Debian Package
+
+### Installation
 
 Supported architectures:
 
 - linux amd64
 - linux arm64
 
-Download the debian package from [https://github.com/devrev/cli/releases/latest](https://github.com/devrev/cli/releases/latest)
+Download the debian package from [here](https://github.com/devrev/cli/releases/latest)
 and install it using the following command:
 
 ```bash
@@ -31,7 +33,7 @@ wget https://raw.githubusercontent.com/devrev/cli/main/install_completions.sh &&
 
 Note: **/usr/local/bin/devrev** path may vary based on your debian installation
 
-### Uninstall debian package
+### Uninstallation
 
 Use this command to deinstall the devrev debian package:
 
@@ -39,9 +41,13 @@ Use this command to deinstall the devrev debian package:
 sudo dpkg -r devrev
 ```
 
-## Installation with Homebrew
+---
 
-Homebrew installation supports the following architectures:
+## Homebrew
+
+### Installation
+
+Supported architectures:
 
 - darwin amd64
 - darwin arm64
@@ -68,11 +74,59 @@ wget https://raw.githubusercontent.com/devrev/cli/main/install_completions.sh &&
 
 Note: **/opt/homebrew/bin/devrev** path may vary based on your homebrew installation
 
-### Uninstall devrev CLI
+### Uninstallation
 
 ```bash
 brew uninstall devrev
 ```
+---
+## Windows
+
+### Installation
+
+Supported architectures:
+
+- windows amd64
+
+Download the windows executable from [here](https://github.com/devrev/cli/releases/latest).
+
+Unzip the downloaded file and add the path to the environment variable.
+
+Here are the steps on how to add a directory to your system PATH environment variable in Windows 10:
+
+#### Steps
+
+1. Open the System Properties window.
+
+   There are two ways to do this:
+
+    * Press Windows key + Pause.
+    * Right-click on "This PC" in File Explorer and select "Properties."
+
+2. In the System window, click on the "Advanced system settings" link in the left pane.
+
+3. In the "Advanced System Properties" window, click on the "Environment Variables" button.
+
+4. Under the "System Variables" section, select the "Path" variable and click on the "Edit" button.
+
+5. In the "Edit environment variable" window, click on the "New" button.
+
+6. Enter the path to the directory you want to add. For example: `C:\Program Files\devrev\`
+
+7. Click on "OK" to save the changes.
+
+8. Close all remaining windows by clicking on "OK".
+
+   Note: You may need to restart your computer for the changes to take effect.
+
+
+### Uninstallation
+
+#### Steps
+1. Remove the path from the environment variable.
+2. Delete the downloaded executable file and its folder.
+
+---
 
 ## Usage
 
@@ -108,4 +162,4 @@ DevRev CLI is proprietary software and is not open source. You may use it for yo
 
 ## Support
 
-If you have any issues or questions about DevRev CLI, please contact our support team at [https://devrev.ai](https://devrev.ai)
+If you have any issues or questions about DevRev CLI, please contact our support team at [DevRev](https://devrev.ai)
